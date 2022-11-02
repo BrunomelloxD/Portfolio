@@ -60,14 +60,14 @@ export const Home = styled.section`
         padding: 0 1rem;
 
         .home-content .text-1 {
-            font: 18px monospace, sans-serif;
+            font: 15px monospace, sans-serif;
         }
         .home-content .text-2 {
-            font: 700 50px monospace, sans-serif;
+            font: 700 40px monospace, sans-serif;
             margin-left: -3px;
         }
         .home-content .text-3 {
-            font: 28px monospace, sans-serif;
+            font: 25px monospace, sans-serif;
             margin: 5px 0;
         }
         .home-content .text-3 span {
@@ -110,6 +110,12 @@ export const Button = styled.div`
     @media (max-width: 576px) {
         padding: 8px 20px;
         font: 500 8px monospace;
+    }
+
+    @media (max-width: 768px) {
+        .typing-demo {
+            width: 18ch ;
+        }
     }
 `
 export const About = styled.section`
