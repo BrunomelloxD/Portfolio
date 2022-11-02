@@ -367,6 +367,7 @@ export const Contact = styled.div`
 
     .github-ri {
         color: #333;
+        animation-delay: 3s;
     }
 
     @keyframes float {
@@ -374,7 +375,7 @@ export const Contact = styled.div`
             transform: translateY(0);
         }
         50% {
-            transform: translateY(-15px);
+            transform: translateY(-10px);
         }
         100% {
             transform: translateY(0);

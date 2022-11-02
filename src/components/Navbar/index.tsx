@@ -16,10 +16,10 @@ export function Navbar() {
                 <span className="span-3" />
             </Hamburguer>
             <Menu open={open}>
-                <MenuLink to="/">Inicio</MenuLink>
-                <MenuLink to="/">Especialidade</MenuLink>
+                <MenuLink to="/">Home</MenuLink>
                 <MenuLink to="/">Sobre</MenuLink>
-                <MenuLink to="/">Contato</MenuLink>
+                <MenuLink to="/">Repositório</MenuLink>
+                <MenuLink to="/">Contate-me</MenuLink>
             </Menu>
         </Nav>
     )

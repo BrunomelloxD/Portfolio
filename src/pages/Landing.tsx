@@ -78,7 +78,10 @@ export function Landing() {
                                 <span> front-end</span>
                             </div>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Olá, meu nome é Bruno Mello e sou estudante front-end.
+                            Tenho 24 anos e estudo Análise e Desenvolvimento de sistemas pela Faculdade de Tecnologia do estado de São Paulo (FATEC Mococa).
+                            Sou apaixonado por tecnologia, trabalho em equipe e no aprendizado. Atualmente venho em busca da minha primeira vaga como desenvolvedor e para isso levo principal foco de estudo: React.JS, React Native, TypeScript, styled-components, Node.js, Express.JS, Git, GitHub, PostgreSQL e Kanban.
+                            Irei deixar um download do meu curriculum para que possa baixa-lo e olhar com mais calma. Obrigado pela visita, espero te ver novamente por aqui!
                             </p>
                             <a href={MyPDF} download="curriculum_bruno_mello">Download CV</a>
                         </div>
@@ -106,6 +109,7 @@ export function Landing() {
             </GitHubContainer>
             <br />
             <br />
+            <br />
             {/**
              * Contact
              */}
@@ -118,9 +122,9 @@ export function Landing() {
                     <LinkedIn className='linkedin-ri icon center' />
                 </a>
 
-                <a href='https://github.com/Brunomello-xD' target="_blank" rel="noopener noreferrer">
+                <a href='https://github.com/BrunomelloxD' target="_blank" rel="noopener noreferrer">
                     <GitHub className='github-ri icon' />
-                </a> 
+                </a>                 
             </Contact>
         </Container>
     )
