@@ -311,6 +311,9 @@ export const CardContainer = styled.div`
         background: ${lighten(0.3, '#5aa9e6')};
 
         padding: 1rem 0.8rem;
+
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     .titleCard {
@@ -329,26 +332,27 @@ export const CardContainer = styled.div`
     }
 
     @media (max-width: 600px) {
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 150px;
+            max-width: 150px;
+            height: 80px;
+            max-height: auto;
+        }
 
         .titleCard {
-            font: 20px monospace, sans-serif;
+            font: 15px monospace, sans-serif;
         }
 
         .description {
-            font: 18px monospace, sans-serif;
+            display: none;
         }
-    }
-
-    @media (max-width: 576px) {
-        .titleCard {
-            font: 18px monospace, sans-serif;
-        }
-
-        .description {
-            font: 16px monospace, sans-serif;
-        }
-        
     }
 `
 
@@ -381,11 +385,17 @@ export const Contact = styled.div`
             transform: translateY(0);
         }
         50% {
-            transform: translateY(-10px);
+            transform: translateY(-5px);
         }
         100% {
             transform: translateY(0);
         }
         
+    }
+
+    @media(max-width: 600px) {
+        .icon {
+            font-size: 35px;
+        }
     }
 `
