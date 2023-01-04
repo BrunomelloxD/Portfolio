@@ -1,7 +1,8 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 import { WhatsApp, LinkedIn, GitHub } from '@mui/icons-material'
 
 import { Navbar } from '../components/Navbar'
+
 import {
     Container,
     Home,
@@ -34,12 +35,6 @@ type Repository = {
 export function Landing() {
     const [userData, setUserData] = useState<UserData>()
     const [repositories, setRepositories] = useState<Repository[]>([])
-
-    const ref = useRef<any>()
-
-    const autoScroll = () => {
-        ref.current.scrollIntoView()
-    }
 
     useEffect(() => {
         api.get('/users/BrunomelloxD').then(response => {
@@ -123,7 +118,7 @@ export function Landing() {
             {/**
              * GitHub
              */}
-            <GitHubContainer ref={ref}>
+            <GitHubContainer className="section-1">
                 <h2 className="title">GitHub</h2>
                 <CardsGithub>
                     {repositories.map(repo => {
@@ -190,11 +185,11 @@ export function Landing() {
                             <div className="face face2">
                                 <div className="content">
                                     <p>
-                                        O design me facina pois é algo que posso
-                                        ver com meus próprios olhos, atualmente
-                                        facinado pelo front onde geralmente
-                                        posso acompanhar as mudanças em tempo
-                                        real.
+                                        O design me fascina pois é algo que
+                                        posso ver com meus próprios olhos,
+                                        atualmente facinado pelo front onde
+                                        geralmente posso acompanhar as mudanças
+                                        em tempo real.
                                     </p>
                                 </div>
                             </div>
@@ -202,9 +197,6 @@ export function Landing() {
                     </div>
                 </CardHover>
             </Skills>
-            <br />
-            <br />
-            <br />
             {/**
              * Contact
              */}
@@ -236,3 +228,5 @@ export function Landing() {
         </Container>
     )
 }
+
+export default Landing
