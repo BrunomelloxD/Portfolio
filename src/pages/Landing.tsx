@@ -187,7 +187,7 @@ export function Landing() {
                                     <p>
                                         O design me fascina pois é algo que
                                         posso ver com meus próprios olhos,
-                                        atualmente facinado pelo front onde
+                                        atualmente fascinado pelo front onde
                                         geralmente posso acompanhar as mudanças
                                         em tempo real.
                                     </p>
