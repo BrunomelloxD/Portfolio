@@ -19,6 +19,7 @@ export function Navbar() {
                 <MenuLink to="/">Home</MenuLink>
                 <MenuLink to="/">Sobre</MenuLink>
                 <MenuLink to="/">Repositório</MenuLink>
+                <MenuLink to="/">Habilidades</MenuLink>
                 <MenuLink to="/">Contate-me</MenuLink>
             </Menu>
         </Nav>
