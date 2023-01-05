@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { Link as LinkScroll } from 'react-scroll'
 import { lighten } from 'polished'
 
 type MenuProps = {
@@ -57,7 +57,7 @@ export const Menu = styled.div<MenuProps>`
     }
 `
 
-export const MenuLink = styled(Link)`
+export const MenuLink = styled(LinkScroll)`
     display: inline-block;
     position: relative;
     /**
@@ -79,9 +79,10 @@ export const MenuLink = styled(Link)`
     }
 `
 
-export const Logo = styled(Link)`
+export const Logo = styled(LinkScroll)`
     padding: 1rem;
     color: #191927;
+    cursor: pointer;
 
     font: 700 1.6rem monospace, sans-serif;
 

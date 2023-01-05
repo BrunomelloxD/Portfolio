@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { forwardRef, useEffect, useRef, useState } from 'react'
 import { WhatsApp, LinkedIn, GitHub } from '@mui/icons-material'
 
 import { Navbar } from '../components/Navbar'
@@ -60,7 +60,7 @@ export function Landing() {
     return (
         <Container>
             <Navbar />
-            <Home>
+            <Home className="home" id="home">
                 <div className="max-width">
                     <div className="home-content">
                         <div className="text-1">Olá, meu nome é</div>
@@ -118,7 +118,7 @@ export function Landing() {
             {/**
              * GitHub
              */}
-            <GitHubContainer className="section-1">
+            <GitHubContainer className="section-1" id="cardsGithub">
                 <h2 className="title">GitHub</h2>
                 <CardsGithub>
                     {repositories.map(repo => {
@@ -152,7 +152,7 @@ export function Landing() {
             <br />
             <br />
             {/* Skills */}
-            <Skills>
+            <Skills id="skills">
                 <h2 className="title">Habilidades</h2>
                 <CardHover>
                     <div className="container">
@@ -200,7 +200,7 @@ export function Landing() {
             {/**
              * Contact
              */}
-            <Contact>
+            <Contact id="contact">
                 <a
                     href="https://wa.me/5519997119007"
                     target="_blank"
@@ -229,4 +229,4 @@ export function Landing() {
     )
 }
 
-export default Landing
+export default forwardRef(Landing)
