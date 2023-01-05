@@ -163,6 +163,7 @@ export const About = styled.section`
 
     .about-content .left {
         width: 45%;
+        overflow: hidden;
     }
 
     .about-content .right {
@@ -225,6 +226,14 @@ export const About = styled.section`
         height: 400px;
         object-fit: cover;
         border-radius: 6px;
+        /* opacity: -6; */
+        transition: transform 400ms;
+    }
+
+    .about-content .left img:hover {
+        transform: scale(1.15);
+        justify-content: center;
+        align-items: center;
     }
 
     .about-content .column {
