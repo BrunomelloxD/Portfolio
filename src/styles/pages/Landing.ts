@@ -78,7 +78,7 @@ export const Home = styled.section`
 `
 
 export const Button = styled.div`
-    .typing-demo {
+    .typing {
         width: 22ch;
         animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
         white-space: nowrap;

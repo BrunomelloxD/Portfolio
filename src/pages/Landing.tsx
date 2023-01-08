@@ -72,7 +72,7 @@ export function Landing() {
                         <br />
                         <br />
                         <Button>
-                            <div className="typing-demo">#Contrate-me</div>
+                            <div className="typing">#Seja bem vindo(a)</div>
                         </Button>
                     </div>
                 </div>
